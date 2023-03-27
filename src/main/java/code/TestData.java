@@ -14,7 +14,7 @@ public class TestData {
         LC_0001_TwoSum lc_0001_twoSum = new LC_0001_TwoSum();
         System.out.println(Arrays.toString(lc_0001_twoSum.twoSum(nums,target)));
         System.out.println(Arrays.toString(lc_0001_twoSum.twoSumTwoPoint(nums,target)));
-
+        System.out.println(Arrays.toString(lc_0001_twoSum.twoSumHashMap(nums,target)));
 
     }
 }

@@ -1,5 +1,7 @@
 package code;
 
+import java.util.HashMap;
+
 /**
  * Author:Jude
  * Date:2023-03-27 上午10:08
@@ -35,5 +37,23 @@ public class LC_0001_TwoSum {
             }
         }
         throw new IllegalArgumentException("no have");
+    }
+
+    // hashmap
+    public int[] twoSumHashMap(int[] nums, int target) {
+
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            hashMap.put(nums[i], i);
+        }
+
+        for (int i = 0; i < n; i++) {
+            int z = target - nums[i];
+            if (hashMap.containsKey(z) && hashMap.get(z) != i) {
+                return new int[]{i, hashMap.get(z)};
+            }
+        }
+        return null;
     }
 }
