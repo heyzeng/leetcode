@@ -7,18 +7,21 @@ package code;
 public class LC_0001_TwoSum {
 
     //暴力遍历
-    public static int[] twoSum(int[] nums, int target) {
-
-        int i = 0;
-        int j = nums.length;
-
-        for (int k = 0; k < j; k++) {
-            for (int l = k + 1; l < j; l++) {
-                if (target == nums[k] + nums[l]) {
-                    return new int[]{k, l};
+    public int[] twoSum(int[] nums, int target) {
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (target == nums[i] + nums[j]) {
+                    return new int[]{i, j};
                 }
             }
         }
+        return null;
+    }
+
+    //双指针
+    public int[] twoSumTwoPoint(int[] nums, int target) {
+
         return null;
     }
 }
