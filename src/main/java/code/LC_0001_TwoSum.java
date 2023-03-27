@@ -22,6 +22,18 @@ public class LC_0001_TwoSum {
     //双指针
     public int[] twoSumTwoPoint(int[] nums, int target) {
 
-        return null;
+        int i = 0;
+        int j = nums.length - 1;
+
+        while (i < j) { //循环结束条件
+            if (target == nums[i] + nums[j]) {
+                return new int[]{i, j};
+            } else if (target < nums[i] + nums[j]) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+        throw new IllegalArgumentException("no have");
     }
 }
