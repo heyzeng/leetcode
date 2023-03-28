@@ -6,7 +6,7 @@ import java.util.HashMap;
  * Author:Jude
  * Date:2023-03-27 上午10:08
  */
-public class LC_0001_TwoSum {
+public class Lc_0001_TwoSum {
 
     //暴力遍历
     public int[] twoSum(int[] nums, int target) {
@@ -51,6 +51,7 @@ public class LC_0001_TwoSum {
         for (int i = 0; i < n; i++) {
             int z = target - nums[i];
             if (hashMap.containsKey(z) && hashMap.get(z) != i) {
+                System.out.println(hashMap.containsKey(z));
                 return new int[]{i, hashMap.get(z)};
             }
         }
