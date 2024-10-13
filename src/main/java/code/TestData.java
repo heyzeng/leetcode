@@ -44,6 +44,5 @@ public class TestData {
         Lc_0020_IsValid lc_0020_isValid = new Lc_0020_IsValid();
         System.out.println(lc_0020_isValid.isValid(test));
 
-
     }
 }
