@@ -42,7 +42,7 @@ public class Lc_0001_TwoSum {
     // hashmap
     public int[] twoSumHashMap(int[] nums, int target) {
 
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        HashMap<Integer, Integer> hashMap = new HashMap<Integer,Integer>();
         int n = nums.length;
         for (int i = 0; i < n; i++) {
             hashMap.put(nums[i], i);

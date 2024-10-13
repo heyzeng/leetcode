@@ -17,12 +17,12 @@ public class Lc_0020_IsValid {
             return false;
         }
 
-        Map<Character, Character> characterHashMap = new HashMap<>();
+        Map<Character, Character> characterHashMap = new HashMap<Character,Character>();
         characterHashMap.put('}','{');
         characterHashMap.put(')','(');
         characterHashMap.put(']','[');
 
-        Deque<Character> stack = new LinkedList<>();
+        Deque<Character> stack = new LinkedList<Character>();
         for (int i = 0; i < n; i++) {
             char c = s.charAt(i);
             if (characterHashMap.containsKey(c)){
